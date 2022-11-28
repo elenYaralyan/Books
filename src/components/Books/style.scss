@@ -1,0 +1,12 @@
+@import "../../assets/style/scss/config";
+
+.list-wrapper {
+  @include forWrappers;
+  .wrappers {
+    @include forBookWrapper;
+    .book-cover {
+      height: 280px;
+      width: 200px;
+    }
+  }
+}

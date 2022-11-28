@@ -1,0 +1,46 @@
+@import "../../assets/style/scss/config";
+
+.wrapper {
+  background-color: $secondly-color;
+  padding: 20px 0;
+  display: grid;
+  grid-template-columns: 1fr 600px;
+  gap: 10px;
+  height: 460px;
+  position: relative;
+  background-image: url("../../assets/images/books.png");
+  background-blend-mode: soft-light;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  .slide-elem {
+    width: 120px;
+    margin-left: 20px;
+    color: darken($font-color, 10%);
+    .img {
+      height: 255px;
+    }
+  }
+  .books {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 70px;
+    color: $font-color;
+    .trending {
+      text-decoration: none;
+      color: $font-color;
+      .trend {
+        font-size: 3.5em;
+      }
+    }
+    .quote {
+      margin-top: 30px;
+      font-size: 2em;
+    }
+  }
+}
+
+.react-multi-carousel-list {
+  padding: 0 5%;
+  margin: 0 30px;
+}

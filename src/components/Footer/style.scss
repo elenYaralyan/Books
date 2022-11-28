@@ -1,0 +1,23 @@
+@import "../../assets/style/scss/config";
+
+.footer {
+  background-color: $main-color;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 30px;
+  gap: 10px;
+  justify-items: center;
+  .genres {
+    grid-column: 1 / 4;
+    justify-self: flex-start;
+    padding: 5px;
+    color: $font-color;
+  }
+  .subject {
+    color: darken($font-color, 10%);
+    text-decoration: none;
+    .genre-list {
+      cursor: pointer;
+    }
+  }
+}

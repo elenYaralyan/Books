@@ -1,0 +1,40 @@
+@import "../../assets/style/scss/config";
+
+.trend-wrapper {
+  @include forWrappers;
+  background-color: $third-color;
+  position: relative;
+  min-height: 300px;
+  color: $font-color;
+  .trend {
+    align-self: center;
+  }
+  .trend::first-letter {
+    font-size: 2em;
+  }
+  .load {
+    @include forBtn;
+    grid-column: 1/-1;
+    justify-self: center;
+    height: 29px;
+    align-self: flex-end;
+  }
+  .box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .book-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    text-decoration: none;
+    color: $font-color;
+    .book-cover {
+      height: 270px;
+      width: 180px;
+    }
+  }
+}

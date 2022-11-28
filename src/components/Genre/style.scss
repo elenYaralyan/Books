@@ -1,0 +1,31 @@
+@import "../../assets/style/scss/config";
+
+.subject-wrapper {
+  color: $font-color;
+  @include forWrappers;
+  background-color: $third-color;
+  position: relative;
+  min-height: 300px;
+  .subject-name {
+    align-self: center;
+  }
+  .subject-name::first-letter {
+    font-size: 2em;
+  }
+  .box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .load {
+    @include forBtn;
+    grid-column: 1/-1;
+    justify-self: center;
+    height: 29px;
+    align-self: flex-end;
+  }
+  .link {
+    @include forBookWrapper;
+  }
+}

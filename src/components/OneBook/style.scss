@@ -1,0 +1,36 @@
+@import "../../assets/style/scss/config";
+
+.container {
+  min-height: 400px;
+  background-color: $third-color;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .book-details {
+    display: flex;
+    gap: 20px;
+    .text-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      gap: 5px;
+      text-align: justify;
+    }
+    .img-wrapper {
+      min-width: 200px;
+    }
+    .btn-back {
+      width: 20px;
+      height: 20px;
+      padding: 10px;
+      border: 1px solid black;
+      border-radius: 50%;
+      background-color: rgba(0, 0, 0, 0.171);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+  }
+}
